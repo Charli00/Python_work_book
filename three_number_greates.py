@@ -3,14 +3,19 @@
 #find the largest number among the three input number
 
 #print the largest number
+# Taking three numbers as input from the user
+a = int(input("Enter the first number: "))
+b = int(input("Enter the second number: "))
+c = int(input("Enter the third number: "))
 
-a = int(input('Enter the first number: '))
-b = int(input('Enter the second number: '))
-c = int(input('Enter the third number: '))
 
-if a < b or b < c:
-    print(a,b,c)
-elif c<a or c<b:
-    print(a,c,b)
-else:
-    print(" n")
+if a > b:
+    a, b = b, a
+if a > c:
+    a, c = c, a
+if b > c:
+    b, c = c, b
+print(a)
+print(b)
+print(c)
+
