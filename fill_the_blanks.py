@@ -35,7 +35,7 @@ print()
 print("Figure out the missing word as quickly as you can!")
 print()
 
-counter = 1
+counter = 0
 while True:
   lyrics = input("I don't wanna ______ a thing. ")
   if lyrics == "miss" or lyrics == "Miss":
