@@ -1,16 +1,24 @@
-import math
-import PI
-user_input_01=(float(input("Enter the lattitue t1 : ")))
-user_input_02=(float(input("Enter the longititude g1 : ")))
-user_input_03=(float(input("Enter the lattitue t2 : ")))
-user_input_04=float(input("Enter the longitude g2 : "))
+# Get the input from the user
+user_input = input("Enter your age: ")
 
-radians_conversion_t1=(PI.PI/180)*user_input_01
-radians_conversion_g1=(PI.PI/180)*user_input_02
-radians_conversion_t2=(PI.PI/180)*user_input_03
-radians_conversion_g2=(PI.PI/180)*user_input_04
+# Check if the input is a digit
+if user_input.isdigit():
+    # Convert the input to an integer
+    convert_to_integer = int(user_input)
 
+    # Determine the age category using if-elif-else statements
+    if convert_to_integer <= 2:
+        print("You are an infant")
+    elif 3 <= convert_to_integer <= 12:
+        print("You are a child")
+    elif 13 <= convert_to_integer <= 19:
+        print("You are a Teenager")
+    elif 20 <= convert_to_integer <= 65:
+        print("You are an Adult")
+    else:
+        print("You are a Senior Citizen")
 
-DISTANCE=math.sqrt((radians_conversion_t2)**2 )-((radians_conversion_t1)**2 )+ ( ((radians_conversion_g2) **2) - ( (radians_conversion_g1)**2 ) )
-
-print(DISTANCE)
+    # Print the age
+    print(f"You are {convert_to_integer} years old")
+else:
+    print("Enter the age in number: ")
