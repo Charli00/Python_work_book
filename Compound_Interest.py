@@ -17,7 +17,7 @@ rate_02=rate_01*0.04
 
 Amount_of_third_year=0.04*Amount_second_year+Amount_second_year
 rate_03=rate_02*0.04
-
+    
 
 print(f"First year amount: {Amount_first_year:.2f} \n and the amount of amount second year: {Amount_second_year:.2f} \n Amount of third year: {Amount_of_third_year:.2f}")
 
